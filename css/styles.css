@@ -1,0 +1,79 @@
+body {
+    background: url(../images/mainbg.png);
+    background-size: cover;
+    /* сброс стандартный отступов */
+    margin: 0;
+    padding: 0;
+    /* цвет текста для всей страницы по умолчанию */
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrapper {
+    width: 1000px;
+    /* высоту удалить */
+    height: 900px;
+    /* выравниваем сам блок wrapper по центру */
+    margin: auto;
+    background: url(../images/top-right-bg.png) no-repeat;
+    /* позиционируем фон */
+    background-position: top right ;
+
+}
+/* HEADER BLOCK */
+nav {
+    padding: 65px 0 0 55px;
+}
+.top-menu {
+    margin: 0;
+    padding: 0;
+}
+.top-menu li{
+    /* меню в одну строку */
+    display: inline-block;
+    margin-right: 14px;
+}
+/* обращение к первому элементу li */
+.top-menu li:first-child{
+    padding-right: 26px;
+}
+.top-menu li a {
+    /* убираем подчеркивание */
+    text-decoration: none;
+    /* цвет текста */
+    color: #fff;
+}
+/* MAIN BLOCK */
+main {
+    /* внешние отступы */
+    margin: 64px 0 0 96px;
+    /* жирность текста */
+    font-weight: 300;
+    /* размер текста */
+    font-size: 12px;
+    /* ширина блока */
+    width: 465px;
+}
+main h1 {
+    font-size: 28;
+    margin: 0;
+    line-height: 0.9;
+}
+main p {
+    /* отступ между словами  */
+    word-spacing: 2px;
+}
+
+/* Обращение к конкретному параграфу по его номеру */
+main p:nth-of-type(1){
+    margin-top: 12px;
+}
+main p:nth-of-type(2){
+    margin-top: 20px;
+}
+/* FOOTER BLOCK */
+footer p {
+    font-size: 12px;
+    padding: 200px 0 50px 55px;
+    /* прозрачность - на 70% видимый */
+    opacity: 0.7;
+}
